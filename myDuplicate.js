@@ -22,8 +22,10 @@ function removeAdjacentDuplicates(myWord) {
 
         // We check if the current character is different from the last one
         if (myWord[index] != wordFinalArr[wordFinalArr.length - 1]) {
+
             // If that is true, we add the current character to the string
             wordFinalArr.push(myWord[index]);
+              
         }
 
         else {
@@ -33,16 +35,12 @@ function removeAdjacentDuplicates(myWord) {
 
     }
 
+
     // Return empty if the last loop remove all the characters
     if (wordFinalArr.length == 0) return ""; 
 
-    let finalWord = "";
-    //Create a new string from the temporalArray
-    while (wordFinalArr.length != 0) {
-        finalWord = wordFinalArr[wordFinalArr.length - 1] + finalWord;
-        wordFinalArr.pop();
-    }
-    return finalWord;
+    return wordFinalArr.join('');
+   
 
 }
 
