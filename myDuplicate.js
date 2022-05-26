@@ -5,8 +5,7 @@
 // If it is equal, then pop th element from the top of the stack.
 
 // Time complexity: O(n)
-// This is because we have two loops, one for and one with while, but regarding time complexity, 
-// we can sum them, so: O(n) + O(n) = O(n)
+// We just have one loop so it's O(n)
 
 // Space complexity: O(n)
 // In space complexity we create a temporalArray and one string to store the final string.
